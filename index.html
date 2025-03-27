@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </head>
-
 <body>
 <!-- Header Hamburger-Menu Navbar -->
 <header>
@@ -21,12 +20,10 @@
                 <img class="img-fluid" src="images/Golf-Pose-Brand.jpg" style="max-height: 50px;">
                 <h1 class="fs-8 mx-3 text-light">Golfing with Harrison</h1>
             </a>
-
             <!-- Hamburger Menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavBar" aria-controls="NavBar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="NavBar">
                 <ul class="navbar-nav ms-auto">
@@ -44,7 +41,6 @@
         </div>
     </nav>
 </header>
-
 <!-- Main Banner Section -->
 <main>
     <section class="container-fluid p-0" style="background-image: url(images/Hole-in-One.jpg); background-size: cover; background-position: center; height: 100vh;">
@@ -55,7 +51,6 @@
             </div>
         </div>
     </section>
-
     <!-- Single Carousel Section -->
     <section class="container-fluid p-0 bg-success py-5">
         <h2 class="text-center mb-4 text-white">About Me</h2>
@@ -84,7 +79,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -96,6 +90,67 @@
             </button>
         </div>
     </section>
+    <!--Multiple Carousel Section-->
+    <!-- Favorite Courses I Have Played Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Favorite Courses I Have Played</h2>
+    <div id="golfCoursesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First Group of Cards -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <img src="images/Southern.jpg" class="card-img-top" alt="Southern Hills">
+                            <div class="card-body">
+                                <h5 class="card-title">Southern Hills</h5>
+                                <p class="card-text">Tulsa, OK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <img src="images/Karsten.jpg" class="card-img-top" alt="Karsten Creek">
+                            <div class="card-body">
+                                <h5 class="card-title">Karsten Creek</h5>
+                                <p class="card-text">Stillwater, OK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <img src="images/Med.jpg" class="card-img-top" alt="Medinah">
+                            <div class="card-body">
+                                <h5 class="card-title">Medinah</h5>
+                                <p class="card-text">Chicago, IL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <img src="images/Shadow.jpg" class="card-img-top" alt="Shadow Creek">
+                            <div class="card-body">
+                                <h5 class="card-title">Shadow Creek</h5>
+                                <p class="card-text">Las Vegas, NV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#golfCoursesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#golfCoursesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
 </main>
 </body>
 </html>
