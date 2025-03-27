@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<!--Header Hamburger-Menu Navbar-->
+<!-- Header Hamburger-Menu Navbar -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -47,12 +47,55 @@
 
 <!-- Main Banner Section -->
 <main>
-    <section style="background-image: url(images/Hole-in-One.jpg); background-size: cover; background-position: center; width: 100%; height: 100vh;">
-        <div class="banner container-fluid position-relative d-flex justify-content-center align-items-center w-100 h-100">
+    <section class="container-fluid p-0" style="background-image: url(images/Hole-in-One.jpg); background-size: cover; background-position: center; height: 100vh;">
+        <div class="banner position-relative d-flex justify-content-center align-items-center w-100 h-100">
             <div class="position-absolute text-white text-center">
                 <h1>Welcome to Golfing with Harrison!</h1>
                 <h2>Check out my golf bio and favorite courses below!</h2>
             </div>
+        </div>
+    </section>
+
+    <!-- Single Carousel Section -->
+    <section class="container-fluid p-0 bg-success py-5">
+        <h2 class="text-center mb-4 text-white">About Me</h2>
+        <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First Card -->
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center">
+                        <!-- Circular Image -->
+                        <img src="images/Golf-Pose-Brand.jpg" alt="Image" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                        <!-- Quote Text -->
+                        <div class="text-center">
+                            <p class="fs-5 text-white">"This is a sample quote. Something inspiring and personal."</p>
+                            <p class="text-white">- Harrison</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Card -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <!-- Circular Image -->
+                        <img src="images/Golf-Pose-Brand.jpg" alt="Image" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                        <!-- Quote Text -->
+                        <div class="text-center">
+                            <p class="fs-5 text-white">"Another memorable thought that defines who I am."</p>
+                            <p class="text-white">- Harrison</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 </main>
