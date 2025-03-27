@@ -1,4 +1,4 @@
 /* Header Styles */
-.navbar-nav .nav-link {
+.navbar-nav .nav-link .nav-link:hover {
     color: #397d54 !important;
 }
