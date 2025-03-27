@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Golfing with Harrison</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="styles.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golfing with Harrison</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<!--Header Hambgurger-Menu Navbar-->
+<!--Header Hamburger-Menu Navbar-->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container-fluid"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black position-relative">
+        <div class="container-fluid py-2">
+            <!-- Brand Section -->
             <a class="navbar-brand d-flex align-items-center" href="#">
-			    <img class="img-fluid" src="images/Golf-Pose-Brand.jpg" width="45">
-			    <h1 class="fs-8 mx-3 text-light">Golfing with Harrison</h1>
-		    </a>
-            <button class="navbar-toggler" type="button" data-bs-togge="collapse" data-bs-target="#Nav" aria-controls="Nav" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="img-fluid" src="images/Golf-Pose-Brand.jpg" style="max-height: 50px;">
+                <h1 class="fs-8 mx-3 text-light">Golfing with Harrison</h1>
+            </a>
+
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#NavBar" aria-controls="NavBar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="NavBar">
-                <ul class="navbar-nav justify-content-end">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link fs-8 mx-3" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav link fs-8 mx-3" href="#">About Me</a>
+                        <a class="nav-link fs-8 mx-3" href="#">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav link fs-8 mx-3" href="#">Favorite Courses</a>
+                        <a class="nav-link fs-8 mx-3" href="#">Favorite Courses</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<!--Banner Free Section-->
+
+<!-- Main Banner Section -->
 <main>
-    <section style="background-image: url(images/Hole-in-One.jpg); background-size: cover; background-position: center; height: 500px;">
-        <div class="banner container-fluid position-relative d-flex justify-content-center text-center align-items-center">
-            <div class="position-absolute text-white">
+    <section style="background-image: url(images/Hole-in-One.jpg); background-size: cover; background-position: center; width: 100%; height: 100vh;">
+        <div class="banner container-fluid position-relative d-flex justify-content-center align-items-center w-100 h-100">
+            <div class="position-absolute text-white text-center">
                 <h1>Welcome to Golfing with Harrison!</h1>
+                <h2>Check out my golf bio and favorite courses below!</h2>
             </div>
         </div>
     </section>
 </main>
 </body>
+</html>
