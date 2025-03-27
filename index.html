@@ -148,57 +148,66 @@
         </div>
     </section>
     <!-- Favorite Golfers Section -->
-<section class="container-fluid bg-success my-0 py-5">
-    <h2 class="text-center mb-4 text-white">Favorite Golfers</h2>
-    <div class="row">
-        <!-- Dropdown and Content -->
-        <div class="col-lg-8">
-            <form>
-                <label for="golferDropdown" class="form-label text-white">Select a Golfer:</label>
-                <!-- Dropdown Menu -->
-                <select id="golferDropdown" class="form-select mb-4" onchange="
-                    document.getElementById('golferTiger').classList.add('d-none');
-                    document.getElementById('golferJordan').classList.add('d-none');
-                    document.getElementById('golferXander').classList.add('d-none');
-                    document.getElementById(this.value).classList.remove('d-none');
-                ">
-                    <option value="golferTiger" selected>Tiger Woods</option>
-                    <option value="golferJordan">Jordan Spieth</option>
-                    <option value="golferXander">Xander Schauffele</option>
-                </select>
-            </form>
-            <!-- Golfer Profiles -->
-            <div id="golferProfiles">
-                <!-- Tiger Woods -->
-                <div id="golferTiger" class="text-center">
-                    <img src="images/T.jpg" alt="Tiger Woods" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                    <h3 class="text-white">Tiger Woods</h3>
-                </div>
-                <!-- Jordan Spieth -->
-                <div id="golferJordan" class="text-center d-none">
-                    <img src="images/J.jpg" alt="Jordan Spieth" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                    <h3 class="text-white">Jordan Spieth</h3>
-                </div>
-                <!-- Xander Schauffele -->
-                <div id="golferXander" class="text-center d-none">
-                    <img src="images/X.jpg" alt="Xander Schauffele" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                    <h3 class="text-white">Xander Schauffele</h3>
+    <section class="container-fluid bg-success my-0 py-5">
+        <h2 class="text-center mb-4 text-white">Favorite Golfers</h2>
+        <div class="row">
+            <!-- Dropdown and Content -->
+            <div class="col-lg-8">
+                <form>
+                    <label for="golferDropdown" class="form-label text-white">Select a Golfer:</label>
+                    <!-- Dropdown Menu -->
+                    <select id="golferDropdown" class="form-select mb-4" onchange="
+                        document.getElementById('golferTiger').classList.add('d-none');
+                        document.getElementById('golferJordan').classList.add('d-none');
+                        document.getElementById('golferXander').classList.add('d-none');
+                        document.getElementById(this.value).classList.remove('d-none');
+                    ">
+                        <option value="golferTiger" selected>Tiger Woods</option>
+                        <option value="golferJordan">Jordan Spieth</option>
+                        <option value="golferXander">Xander Schauffele</option>
+                    </select>
+                </form>
+                <!-- Golfer Profiles -->
+                <div id="golferProfiles">
+                    <!-- Tiger Woods -->
+                    <div id="golferTiger" class="text-center">
+                        <img src="images/T.jpg" alt="Tiger Woods" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h3 class="text-white">Tiger Woods</h3>
+                    </div>
+                    <!-- Jordan Spieth -->
+                    <div id="golferJordan" class="text-center d-none">
+                        <img src="images/J.jpg" alt="Jordan Spieth" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h3 class="text-white">Jordan Spieth</h3>
+                    </div>
+                    <!-- Xander Schauffele -->
+                    <div id="golferXander" class="text-center d-none">
+                        <img src="images/X.jpg" alt="Xander Schauffele" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h3 class="text-white">Xander Schauffele</h3>
+                    </div>
                 </div>
             </div>
+            <!-- Aside Section -->
+            <aside class="col-lg-4 bg-success text-white p-3">
+                <h5 class="text-center">Fun Facts About My Favorite Golfers</h5>
+                <ul>
+                    <li>Tiger Woods has won 15 major championships.</li>
+                    <li>Jordan Spieth won the Masters and US Open back-to-back in 2015.</li>
+                    <li>Xander Schauffele won Olympic gold in 2020 and two majors in 2024.</li>
+                </ul>
+            </aside>
         </div>
-
-        <!-- Aside Section -->
-        <aside class="col-lg-4 bg-success text-white p-3">
-            <h5 class="text-center">Fun Facts About My Favorite Golfers</h5>
-            <ul>
-                <li>Tiger Woods has won 15 major championships.</li>
-                <li>Jordan Spieth won the Masters and US Open back-to-back in 2015.</li>
-                <li>Xander Schauffele won Olympic gold in 2020 and two majors in 2024.</li>
-            </ul>
-        </aside>
-    </div>
-</section>
-
+    </section>
+    <!--Footer-->
+    <footer class="bg-success text-white py-3">
+        <div class="container text-center">
+            <p>Developed by Harrison Gearhart</p>
+            <a href="https://github.com/HarrisonGearhart" target="_blank">
+                <img src="images/github.jpg" alt="GitHub Link" class="img-fluid" style="width: 50px; height: auto;">
+            </a>
+            <p class="mt-2">© 2025 Golfing with Harrison. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
 </main>
 </body>
 </html>
